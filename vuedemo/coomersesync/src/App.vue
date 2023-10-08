@@ -1,20 +1,45 @@
-<script setup>
-import Home from '/src/components/Home.vue'
-import Refresh from '/src/components/RefreshComponent.vue'
+<script>
+ import Home from './components/Home.vue';
+ import RefreshComponent from './components/RefreshComponent.vue';
+
 </script>
 
 <template>
-  <header><Refresh></Refresh></header>
-
-  <main><Home></Home></main>
-
-  
-
- 
-
+  <div class="wrapper">
+    <div class="home-page">
+      <router-link to="/Home">Csapatunk</router-link>  
+    </div>
+    <div class="refresh-page">
+      <router-link to="/RefreshComponent">Frissít</router-link>
+    </div>
+  </div>
 </template>
 
 
-<style scoped>
+<style >
+
+.wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.home-page
+{
+  grid-column: 1 / 3;
+  grid-row: auto;
+  margin: 10px;
+  padding: 5px;
+}
+.refresh-page
+{
+  grid-column: 6 / 10;
+  grid-row: auto;
+  margin: 10px;
+  padding: 5px;
+}
 
 </style>

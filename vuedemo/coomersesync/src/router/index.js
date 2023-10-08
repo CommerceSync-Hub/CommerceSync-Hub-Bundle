@@ -4,13 +4,13 @@ import RefreshComponent from '/src/components/RefreshComponent.vue'
 
 const routes = [
     {
-        path: '/',
+        path: '/Home',
         name: 'Home',
         component: Home,
     },
     {
-        path: '/',
-        name: 'RegreshComponent',
+        path: '/RefreshComponent',
+        name: 'RefreshComponent',
         component: RefreshComponent,
     },
 ]

@@ -1,12 +1,14 @@
-<script setup>
+<script >
 
 </script>
 
 <template>
-    <div>Frissítés</div>
+    
+ssss
 
  
 </template>
 
 <style scoped>
+
 </style>
