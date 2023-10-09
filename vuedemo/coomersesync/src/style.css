@@ -10,7 +10,8 @@ body
   font-size: 22px;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
-  color: hsl(194, 28%, 91%);
+  color: hsl(195, 22%, 96%);
+  font-size: 500;
 }
 a
 {

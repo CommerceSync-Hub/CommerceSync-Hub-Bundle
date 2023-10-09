@@ -5,41 +5,46 @@
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="home-page">
-      <router-link to="/Home">Csapatunk</router-link>  
+
+<div id="app">
+  <div id="nav">
+    <div id="home-link">
+      <router-link to="/Home">Csapatunk</router-link> 
     </div>
-    <div class="refresh-page">
-      <router-link to="/RefreshComponent">Frissít</router-link>
+    <div id="refresh-link">
+      <router-link to="/RefreshComponent">Frissítések</router-link>
     </div>
   </div>
+  <router-view />
+</div>
+
 </template>
 
 
-<style >
-
-.wrapper
+<style scoped>
+#app
 {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
+  padding: 10px;
 }
-.home-page
+#nav
 {
-  grid-column: 1 / 3;
-  grid-row: auto;
+  grid-column: 1 / 6;
   margin: 10px;
   padding: 5px;
 }
-.refresh-page
+#home-link
 {
-  grid-column: 6 / 10;
-  grid-row: auto;
-  margin: 10px;
-  padding: 5px;
+  margin: 5px 10px 10px 5px;
 }
+#refresh-link
+{
+  margin: 5px 10px 10px 5px;
+}
+
 
 </style>

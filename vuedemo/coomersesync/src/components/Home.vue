@@ -5,27 +5,19 @@
 </script>
 
 <template>
-   <div class="home-content">
-    <ul>
-        <le>assd</le>
-        <le>asssd</le>
-        <le>asssd</le>
-        <le>asssd</le>
-        <le>asssd</le>
-        <le>asssd</le>
-    </ul>
-   </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-warning mx-2 my-1 fs-1">Tesszáry Péter Márk</button>
+            <button type="button" class="btn btn-warning mx-2 my-1 fs-1">Pernyész Dániel</button>
+            <button type="button" class="btn btn-warning mx-2 my-1 fs-1">Bagi Péter</button>
+        </div>
+    </div>
+    </div>
+
 </template>
 
 <style scoped>
-.home-content
-{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
-}
-ul
-{
-    grid-column: 2 / 5;
-}
+
 </style>

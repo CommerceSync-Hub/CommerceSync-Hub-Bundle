@@ -4,7 +4,7 @@ import RefreshComponent from '/src/components/RefreshComponent.vue'
 
 const routes = [
     {
-        path: '/Home',
+        path: '/home',
         name: 'Home',
         component: Home,
     },
