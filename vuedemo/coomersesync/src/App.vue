@@ -1,18 +1,25 @@
 <script>
  import Home from './components/Home.vue';
  import RefreshComponent from './components/RefreshComponent.vue';
+ import SablonComponent from './components/SablonComponent.vue';
 
 </script>
 
 <template>
 
+  <div class="col">
+      <img id="logo" src="./assets/R.png" class="rounded float-end" alt="logo">
+    </div>
 <div id="app">
   <div id="nav">
     <div id="home-link">
-      <router-link to="/Home">Csapatunk</router-link> 
+      <router-link to="/Home">Csapat</router-link> 
     </div>
     <div id="refresh-link">
-      <router-link to="/RefreshComponent">Frissítések</router-link>
+      <router-link to="/RefreshComponent">Frissítés</router-link>
+    </div>
+    <div id="template-link">
+      <router-link to="/SablonComponent">Sablonok</router-link>
     </div>
   </div>
   <router-view />
@@ -22,28 +29,28 @@
 
 
 <style scoped>
-#app
-{
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  padding: 10px;
-}
 #nav
 {
-  grid-column: 1 / 6;
-  margin: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  background: hsla(240, 1%, 35%, 0.7);
   padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
 }
-#home-link
+#logo
 {
-  margin: 5px 10px 10px 5px;
+    max-width: 9%;
+    margin: 4px;
+    padding: 3px;
 }
-#refresh-link
+#home-link,
+#refresh-link,
+#template-link
 {
-  margin: 5px 10px 10px 5px;
+  margin: 2px 5px;
+  padding: 2px;
 }
 
 
