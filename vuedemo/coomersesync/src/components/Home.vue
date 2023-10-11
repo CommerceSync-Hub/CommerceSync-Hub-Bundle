@@ -6,16 +6,16 @@
 
     <div class="container">
         <div class="row">
-            <div class="col col-md-8 col-lg-10 col-xl-12">
+            <div class="col col-md-8 col-lg-10 col-xl-12 ">
                 <div class="d-flex justify-content-between">
-                   <button type="button" class="btn btn-warning mx-1 my-4 fs-1 p-1">Tesszáry Péter </button>
-                   <button type="button" class="btn btn-warning mx-1 my-4 fs-1 p-1">Pernyész Dániel</button>
-                   <button type="button" class="btn btn-warning mx-1 my-4 fs-1 p-1">Bagi Péter</button>
+                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Tesszáry Péter </button>
+                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Pernyész Dániel</button>
+                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Bagi Péter</button>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-xl-8">
+            <div class="col-12 col-lg-xl-8 mt-1 mb-2">
                 <figure class="text-end">
                 <blockquote class="blockquote">
                     <p>Probáld ki sablonjaink, és éld át az alkotás örömét.</p>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 my-1">
+            <div class="col-12 my-1 rounded">
                 <div class="card mb-3 border-warning">
             <img src=".././assets/template-img.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-dark text-white">
@@ -81,9 +81,9 @@
   justify-content: space-around;
   gap: 10px;
   background: hsla(240, 1%, 35%, 0.7);
-  padding: 5px;
-  margin: 10px;
-  border-radius: 5px;
+  padding: 0 5px;
+  margin: 3px 0;
+  border-radius: 15px;
 }
 
 </style>

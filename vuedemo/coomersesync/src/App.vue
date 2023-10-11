@@ -36,20 +36,20 @@
   gap: 10px;
   background: hsla(240, 1%, 35%, 0.7);
   padding: 5px;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 8px;
+  border-radius: 15px;
 }
 #logo
 {
     max-width: 9%;
-    margin: 4px;
+    margin: 3px;
     padding: 3px;
 }
 #home-link,
 #refresh-link,
 #template-link
 {
-  margin: 2px 5px;
+  margin: 2px ;
   padding: 2px;
 }
 
