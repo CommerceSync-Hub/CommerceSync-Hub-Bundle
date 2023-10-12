@@ -41,7 +41,7 @@
 }
 #logo
 {
-    max-width: 9%;
+    max-width: 7%;
     margin: 3px;
     padding: 3px;
 }
