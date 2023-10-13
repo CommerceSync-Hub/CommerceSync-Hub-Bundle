@@ -7,13 +7,11 @@
 
 <template>
 
-  <div class="col">
-      <img id="logo" src="./assets/R.png" class="rounded float-end" alt="logo">
-    </div>
-<div id="app">
+  <header>
+    <div id="app">
   <div id="nav">
     <div id="home-link">
-      <router-link to="/Home">Csapat</router-link> 
+     <router-link to="/Home">Csapat</router-link>
     </div>
     <div id="refresh-link">
       <router-link to="/RefreshComponent">Frissítés</router-link>
@@ -24,6 +22,7 @@
   </div>
   <router-view />
 </div>
+  </header>
 
 </template>
 
@@ -33,25 +32,21 @@
 {
   display: flex;
   justify-content: start;
+  align-items: center;
   gap: 10px;
   background: hsla(240, 1%, 35%, 0.7);
-  padding: 5px;
+  padding: 0 5px;
   margin: 8px;
   border-radius: 15px;
 }
-#logo
-{
-    max-width: 7%;
-    margin: 3px;
-    padding: 3px;
-}
+
 #home-link,
 #refresh-link,
 #template-link
 {
   margin: 2px ;
   padding: 2px;
+  width: 100px;
 }
-
 
 </style>

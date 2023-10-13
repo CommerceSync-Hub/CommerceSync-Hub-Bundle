@@ -1,12 +1,27 @@
-<script setup>
-
+<script>
+export default
+{
+    name: 'Home',
+    data ()
+    {
+        return{
+            show: false,
+            showUnder: false
+        }
+       
+    }
+    
+    
+};
 </script>
 
 <template>
 
     <div class="container">
-        <div class="row">
-            <div class="col col-md-8 col-lg-10 col-xl-12 ">
+
+        <main>
+            <div class="row">
+            <div class="col col-md-6 col-lg-10 col-xl-12 ">
                 <div class="d-flex justify-content-between">
                    <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Tesszáry Péter </button>
                    <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Pernyész Dániel</button>
@@ -33,20 +48,42 @@
             <div class="card-body bg-dark text-white">
                 <h3 class="card-title fw-semibold ">Méretre optimalizálva</h3>
                 <h4 class="card-text">Fontosnak tartjuk a rugalmasságot, ezért fejlesztéseinket minden eszközön és méretben kényelmesen használhatod.</h4>
-                <p class="card-text p-1 rounded"><small class="bg-warning text-dark p-1">Kérdésed van?</small></p>
+                <button type="button" class="btn btn-outline-danger p-1 mx-3 my-1" @click="show = !show" >Ügyfélszolgálat</button>
+                <div class="adress" v-show="show">
+                    <h3>Email
+                        <p>syncHUB@gmail.com
+                            <small>Válaszidő: 3-5 nap</small>
+                        </p>
+                    </h3>
+                    <h3>Telefon
+                        <p>06-62-458-973</p>
+                    </h3>
+                </div>
             </div>
             </div>
             <div class="card border-warning ">
             <div class="card-body bg-white text-dark">
                 <h3 class="card-title fw-semibold">Mindenki egyenlő</h3>
                 <h4 class="card-text">A "Minden ember egyenlő" szemléletet követve a korlátozott képességü embertársainkra is nagy figyelmet fordítunk.</h4>
-                <p class="card-text p-1 rounded"><small class="bg-secondary text-white p-1">Kérdésed van?</small></p>
+                <button type="button" class="btn btn-outline-danger bg-info text-dark p-1 mx-3 my-1" @click="showUnder = !showUnder" >Ügyfélszolgálat</button>
+                <div class="adress" v-show="showUnder">
+                    <h3>Email
+                        <p>syncHUB@gmail.com
+                            <small>Válaszidő: 3-5 nap</small>
+                        </p>
+                    </h3>
+                    <h3>Telefon
+                        <p>06-62-458-973</p>
+                    </h3>
+                </div>
             </div>
-            <img src=".././assets/template-img-2.jpg" class="card-img-bottom" alt="...">
+            <img src=".././assets/template-img-2.jpg" class="card-img-bottom">
             </div>
             </div>
         </div>
-        <div class="icons">
+        </main>
+        <footer>
+            <div class="icons">
             <div class="win">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
                   <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
@@ -69,14 +106,14 @@
                 </svg>
             </div>
         </div>
+        </footer>
     </div>
 
 </template>
 
 <style scoped>
 .icons
-{
-    
+{  
   display: flex;
   justify-content: space-around;
   gap: 10px;
@@ -84,6 +121,17 @@
   padding: 0 5px;
   margin: 3px 0;
   border-radius: 15px;
+}
+.adress
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+    padding: 2px;
+    width: 267px;
+    margin: 23px;
+    border: 1px solid hsl(0, 99%, 44%);
 }
 
 </style>
