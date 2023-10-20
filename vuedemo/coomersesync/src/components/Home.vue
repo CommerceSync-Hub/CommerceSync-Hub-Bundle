@@ -19,16 +19,14 @@ export default
 
     <div class="container">
 
-        <main>
-            <div class="row">
-            <div class="col col-md-6 col-lg-10 col-xl-12 ">
-                <div class="d-flex justify-content-between">
-                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Tesszáry Péter </button>
-                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Pernyész Dániel</button>
-                   <button type="button" class="btn btn-warning mx-1 my-2 fs-1 p-1">Bagi Péter</button>
-                </div>
-            </div>
+     <main>
+            <div class="container">
+        <div class="row">
+            <div class="col-6  my-3 p-4 text bg-warning">
+               <samp>Üdvözöl a CommerseSync! <br> Vágj bele az alkotásba.</samp>
+           </div>
         </div>
+    </div>
         <div class="row">
             <div class="col-12 col-lg-xl-8 mt-1 mb-2">
                 <figure class="text-end">
@@ -42,7 +40,7 @@ export default
             </div>
         </div>
         <div class="row">
-            <div class="col-12 my-1 rounded">
+            <div class="col-12 my-1 rounded pr">
                 <div class="card mb-3 border-warning">
             <img src=".././assets/template-img.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-dark text-white">
@@ -65,7 +63,7 @@ export default
             <div class="card-body bg-white text-dark">
                 <h3 class="card-title fw-semibold">Mindenki egyenlő</h3>
                 <h4 class="card-text">A "Minden ember egyenlő" szemléletet követve a korlátozott képességü embertársainkra is nagy figyelmet fordítunk.</h4>
-                <button type="button" class="btn btn-outline-danger bg-info text-dark p-1 mx-3 my-1" @click="showUnder = !showUnder" >Ügyfélszolgálat</button>
+                <button type="button" class="btn btn-outline-danger  p-1 mx-3 my-1" @click="showUnder = !showUnder" >Ügyfélszolgálat</button>
                 <div class="adress" v-show="showUnder">
                     <h3>Email
                         <p>syncHUB@gmail.com
@@ -112,6 +110,14 @@ export default
 </template>
 
 <style scoped>
+
+.text
+{
+    background: hsla(233, 20%, 55%, .7);
+    color: hsl(180, 2%, 11%);
+    text-align: center;
+    border-radius: 10px;
+}
 .icons
 {  
   display: flex;
@@ -122,11 +128,20 @@ export default
   margin: 3px 0;
   border-radius: 15px;
 }
+.pr
+{
+    position: relative;
+}
 .adress
 {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
     display: flex;
     flex-direction: column;
     gap: 3px;
+    background: hsla(240, 6%, 93%, 0.9);
+    color: hsl(180, 2%, 11%);
     text-align: center;
     padding: 2px;
     width: 267px;
